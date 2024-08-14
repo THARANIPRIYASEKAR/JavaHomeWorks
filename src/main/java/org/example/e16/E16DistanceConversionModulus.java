@@ -10,7 +10,7 @@ public class E16DistanceConversionModulus {
         kilometers = totalMeters/1000;
         meters = totalMeters%1000;
 
-        // Print the results 1850 meters is equal to 1 kilometers and 850 meters.
+        // Print the results 1850 meters is equal to 1 kilometer and 850 meters.
         System.out.println(totalMeters + " meters is equal to " +
                             kilometers + " kilometers and " + meters + " meters.");
     }
