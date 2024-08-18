@@ -12,7 +12,7 @@ public class E26TemperatureCheckerIfConditions {
             System.out.println("It's warm outside.");
         }else if(temperature>=10) {
             System.out.println("It's cool outside.");
-        }else if(temperature<10) {
+        }else  {
             System.out.println("It's cold outside.");
         }
     }

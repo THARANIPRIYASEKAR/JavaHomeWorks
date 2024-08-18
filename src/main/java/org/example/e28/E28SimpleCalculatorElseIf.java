@@ -6,19 +6,25 @@ public class E28SimpleCalculatorElseIf {
         String operator = "*";
 
         // Declare two variables for numbers and assign values
-        int num1=10;
-        int num2=5;
+        int num1 = 10;
+        int num2 = 5;
 
         // Perform the corresponding arithmetic operation
-        if(operator.equals("+")) {
-            System.out.println("The sum is: " + (num1+num2));
+        if (operator.equals("+")) {
+            System.out.println("The sum is: " + (num1 + num2));
 
-        }else if(operator.equals("-")) {
-            System.out.println("The difference is: " + (num1-num2));
-        }else if(operator.equals("*")) {
-            System.out.println("The product is: " + (num1*num2));
-        }else if(operator.equals("/")) {
-            System.out.println("The quotient is: " + (num1/num2));
+        } else if (operator.equals("-")) {
+            System.out.println("The difference is: " + (num1 - num2));
+        } else if (operator.equals("*")) {
+            System.out.println("The product is: " + (num1 * num2));
+        } else if (operator.equals("/")) {
+            if (num2 != 0) {
+                System.out.println("The quotient is: " + (num1 / num2));
+            } else {
+                System.out.println("Cannot divide by zero.");
+            }
+        } else {
+            System.out.println("Invalid operator.");
         }
     }
 }

@@ -12,9 +12,10 @@ public class E25DailyExpenseTrackerIfConditions {
         // Define a budget
         double budget=100.0;
 
+        System.out.println("Your total daily expense is: " + totalExpense);
         // Check if within budget
         if(totalExpense<=budget) {
-            System.out.println("Your total daily expense is: " + totalExpense);
+
             System.out.println("You are within the budget.");
         }else {
             System.out.println("You are over the budget.");
