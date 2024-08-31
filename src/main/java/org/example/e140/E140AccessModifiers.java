@@ -2,16 +2,29 @@ package org.example.e140;
 
 public class E140AccessModifiers {
 
-    public static void main(String[] args) {
 
-        //declare and initialize string array of words
-        String[] words ={"Public","Private","this is long","Default"};
+    //create method maxLength as package-private
+    String maxLength(String[] words) {
 
-        //create object for the class MaxLengthTest
-        MaxLengthTest m = new MaxLengthTest();
+        //declare variable local variable to store the word with max length
+        String mLength = "";
 
-        //execute the maxLength method with object reference
-        System.out.println( m.maxLength(words));
+        //for loop to iterate through the string array
+        for (int i = 0; i < words.length; i++) {
+
+            //if condition to check the max length
+            if (words[i].length() > mLength.length()) {
+
+                //mLength will be replaced with word[i] whenever the condition met
+                mLength = words[i];
+
+            }
+        }
+
+        //return the word with max length
+        return mLength;
+
 
     }
+
 }

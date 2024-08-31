@@ -2,14 +2,37 @@ package org.example.e139;
 
 public class E139AccessModifiers {
 
-    public static void main(String[] args) {
+    //protected method to replace spaces with underscore and return result
+    protected String replaceSpaces(String str) {
 
-        /*Execute the method alphabetical with the help of class name to format the three different string
-        and print the result*/
-        System.out.println(AlphabeticalTest.alphabetical("hello"));
-        System.out.println(AlphabeticalTest.alphabetical("software"));
-        System.out.println(AlphabeticalTest.alphabetical("language"));
+        str = str.replaceAll(" ", "_");
+
+        //return result
+        return str;
     }
+
+    /********default method********/
+    //String replaceSpaces(String str) {
+    //str=str.replaceAll(" ","_");
+    //return str;
+    //}
+
+    /*********public method*********/
+    //public String replaceSpaces(String str) {
+    //str=str.replaceAll(" ","_");
+    //return str;
+    //}
+
+    /********private method*********/
+    //private String replaceSpaces(String str) {
+    //str = str.replaceAll(" ", "_");
+    //return str;
+    //}
+    //constructor for private method
+    //public E139AccessModifiers(String str) {
+    //System.out.println(replaceSpaces(str));
+    //}
+
 
 }
 

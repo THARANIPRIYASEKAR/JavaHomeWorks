@@ -5,13 +5,16 @@ public class E132StaticKeyword {
     //static method to subtract each element in 2d array by 10
     static double[][] reduce10(double[][] inArray) {
 
+        double[][] newArray = new double[inArray.length][];
+
         //iterate through the array and reduce the values by 10
         for (int i = 0; i < inArray.length; i++) {
+            newArray[i] = new double[inArray[i].length];
             for (int j = 0; j < inArray[i].length; j++) {
-                inArray[i][j] = inArray[i][j] - 10;
+                newArray[i][j] = inArray[i][j] - 10;
             }
         }
-        return inArray;
+        return newArray;
     }
 
     public static void main(String[] args) {

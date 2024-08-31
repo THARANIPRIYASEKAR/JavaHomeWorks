@@ -9,6 +9,20 @@ public class E136AccessModifiers {
         System.out.println("This is Private Method");
     }
 
+    public static void main(String[] args) {
+        E136AccessModifiers a = new E136AccessModifiers();
+        a.privateMethod();
+
+        AccessTest at = new AccessTest();
+        at.defaultMethod();
+        at.protectedMethod();
+        at.publicMethod();
+
+    }
+}
+
+class AccessTest {
+
     //default method
     void defaultMethod() {
         System.out.println("This is Default Method");
@@ -23,15 +37,5 @@ public class E136AccessModifiers {
     public void publicMethod() {
         System.out.println("This is Public Method");
     }
-
-    public static void main(String[] args) {
-        E136AccessModifiers a = new E136AccessModifiers();
-        a.privateMethod();
-        a.defaultMethod();
-        a.protectedMethod();
-        a.publicMethod();
-
-    }
 }
-
 

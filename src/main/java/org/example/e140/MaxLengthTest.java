@@ -2,24 +2,18 @@ package org.example.e140;
 
 public class MaxLengthTest {
 
-    //create method maxLength with visibility only within the package
-    protected String maxLength(String[] mWords) {
+    public static void main(String[] args) {
 
-        //declare variable local variable to store the word with max length
-        String mLength = "";
+        //declare and initialize string array of words
+        String[] s1 ={"this", "is", "a", "long", "word"};
+        String[] s2 = {"java", "programming", "is", "fun"};
 
-        //for loop to iterate through the string array
-        for (int i = 0; i < mWords.length; i++) {
+        //create object for the class MaxLengthTest
+        E140AccessModifiers e = new E140AccessModifiers();
 
-            //if condition to check the max length
-            if (mWords[i].length() > mLength.length()) {
+        //execute the maxLength method with object reference
+        System.out.println( e.maxLength(s1));
+        System.out.println( e.maxLength(s2));
 
-                //mLength will be replaced with mword[i] whenever the condition met
-                mLength = mWords[i];
-
-            }
-        }
-        //return the word with max length
-        return mLength;
     }
 }

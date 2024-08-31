@@ -2,31 +2,18 @@ package org.example.e139;
 
 public class AlphabeticalTest {
 
-    //create the method alphabetical with visibility to all classes in the project
-    public static String alphabetical(String str) {
+    public static void main(String[] args) {
 
-        //declare and initialize local variable to store the formated string
-        String alphabet = "";
+        //for public/default/protected
+        E139AccessModifiers e = new E139AccessModifiers();
+        System.out.println(e.replaceSpaces("hello world"));
+        System.out.println(e.replaceSpaces("java is fun"));
+        System.out.println(e.replaceSpaces("i love coding"));
 
-        //for loop to iterate through every character of the string
-        for (int i = 0, j = 1; i < str.length(); i += 2, j += 2) {
+        /********private method********/
 
-            /*if condition to compare characters of the string,
-            where characters later on in the alphabet are "greater"*/
-            if (j < str.length()) {
-
-                if (str.charAt(j) > str.charAt(i)) {
-                    alphabet = alphabet.concat(String.valueOf(str.charAt(j)));
-                } else {
-                    alphabet = alphabet.concat(String.valueOf(str.charAt(i)));
-                }
-            } else {
-                alphabet = alphabet.concat(String.valueOf(str.charAt(i)));
-            }
-
-        }
-        //return result
-        return alphabet;
+        //E139AccessModifiers e1 = new E139AccessModifiers("hello world");
+        //E139AccessModifiers e2 = new E139AccessModifiers("java is fun");
+        //E139AccessModifiers e3 = new E139AccessModifiers("i love coding");
     }
-
 }

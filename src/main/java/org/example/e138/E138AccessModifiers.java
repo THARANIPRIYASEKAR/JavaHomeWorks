@@ -4,8 +4,8 @@ public class E138AccessModifiers {
 
     public static void main(String[] args) {
 
-        //creating object from class AccessModifierTest
-        AccessModifierTest a = new AccessModifierTest();
+        //creating object from class AnotherClass
+        AnotherClass a = new AnotherClass();
 
         //access methods of class AccessModifierTest
         System.out.println(a.defaultMethod());
@@ -14,7 +14,7 @@ public class E138AccessModifiers {
     }
 }
 
-class AccessModifierTest {
+class AnotherClass {
 
     //declaring private method
     private String privateMethod() {

@@ -3,7 +3,7 @@ package org.example.e141;
 public class MaxValueTest {
 
     //create method maxValue with visibility to every class in any package
-    public static int maxValue(int[] mNum) {
+    public int maxValue(int[] mNum) {
 
         //declare and initialize local variable to store max value in the array
         int max = mNum[0];
